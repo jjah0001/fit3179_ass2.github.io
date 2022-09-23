@@ -1,107 +1,107 @@
-Country,Score,Band,Number of Tourists,Tourism Contribution to GDP (%),,,
-Netherlands,663,Very High Proficiency,20129000,1.9,,,217877000
-Austria,641,Very High Proficiency,31884000,4.9,,,
-Denmark,636,Very High Proficiency,33093000,2.3,,,
-Singapore,635,Very High Proficiency,19116000,6.1,,,
-Norway,632,Very High Proficiency,5879000,1.4,,,
-Belgium,629,Very High Proficiency,9343000,2.5,,,
-Portugal,625,Very High Proficiency,17283000,7.9,,,
-Sweden,623,Very High Proficiency,7616000,2.6,,,
-Finland,618,Very High Proficiency,3290000,1.2,,,
-Croatia,617,Very High Proficiency,60021000,19.9,,,
-Germany,616,Very High Proficiency,39563000,1.1,,,
-South Africa,606,Very High Proficiency,14797000,2.5,,,
-Luxembourg,604,Very High Proficiency,1041000,7.2,,,
-Serbia,599,High Proficiency,1847000,3.2,,,
-Romania,598,High Proficiency,12815000,1.2,,,
-Poland,597,High Proficiency,88515000,2.4,,,
-Hungary,593,High Proficiency,61397000,4.4,,,
-Philippines,592,High Proficiency,8261000,2.2,,,
-Greece,591,High Proficiency,34005000,8.3,,,
-Slovakia,590,High Proficiency,,3.1,,,
-Kenya,587,High Proficiency,2049000,1.2,,,
-Estonia,581,High Proficiency,6103000,6.3,,,
-Bulgaria,580,High Proficiency,12552000,7.1,,,
-Lithuania,579,High Proficiency,6150000,2.8,,,
-Switzerland,575,High Proficiency,11818000,2.5,,,
-Latvia,569,High Proficiency,8342000,2.9,,,
-Czech Republic,563,High Proficiency,37202000,3.2,,,
-Malaysia,562,High Proficiency,26101000,5.8,,,
-Nigeria,560,High Proficiency,,0.68,,,
-Argentina,556,High Proficiency,7399000,0.79,,,
-France,551,High Proficiency,217877000,2.3,,,
-Hong Kong,545,Moderate Proficiency,55913000,4.5,,,
-Spain,540,Moderate Proficiency,126170000,5.2,,,
-Lebanon,536,Moderate Proficiency,1936000,14.7,,,
-Italy,535,Moderate Proficiency,95399000,2.3,,,
-South Korea,529,Moderate Proficiency,17503000,0.88,,,
-Belarus,528,Moderate Proficiency,11832000,1.5,,,
-Albania,527,Moderate Proficiency,6406000,14.8,,,
-Ukraine,525,Moderate Proficiency,13710000,1.1,,,
-Bolivia,524,Moderate Proficiency,1239000,2.1,,,
-Ghana,523,Moderate Proficiency,,1.8,,,
-Cuba,521,Moderate Proficiency,4276000,3.3,,,
-Costa Rica,520,Moderate Proficiency,3366000,6.8,,,
-Paraguay,520,Moderate Proficiency,4368000,2,,,
-Chile,516,Moderate Proficiency,5431000,1.3,,,
-India,515,Moderate Proficiency,17914000,1.1,,,
-China,513,Moderate Proficiency,162538000,0.27,,,
-Georgia,512,Moderate Proficiency,7726000,18.1,,,
-Russia,511,Moderate Proficiency,24419000,0.57,,,
-Tunisia,510,Moderate Proficiency,9429000,3.2,,,
-Uruguay,509,Moderate Proficiency,3480000,4.5,,,
-El Salvador,508,Moderate Proficiency,2639000,3.5,,,
-Honduras,506,Moderate Proficiency,2315000,3.1,,,
-Peru,505,Moderate Proficiency,5275000,1.8,,,
-Macau,504,Moderate Proficiency,39406000,3.7,,,
-Iran,501,Moderate Proficiency,9107000,0.84,,,
-Armenia,499,Low Proficiency,1894000,9.7,,,
-Brazil,497,Low Proficiency,6353000,0.28,,,
-Guatemala,493,Low Proficiency,2560000,2.1,,,
-Nepal,492,Low Proficiency,1197000,2.6,,,
-Ethiopia,491,Low Proficiency,812000,0.54,,,
-Pakistan,491,Low Proficiency,,0.12,,,
-Bangladesh,490,Low Proficiency,323000,0.13,,,
-Vietnam,486,Low Proficiency,18009000,4,,,
-Tanzania,485,Low Proficiency,1527000,4.5,,,
-Mozambique,482,Low Proficiency,2033000,1.2,,,
-United Arab Emirates,480,Low Proficiency,25282000,5.5,,,
-Turkey,478,Low Proficiency,51747000,2.6,,,
-Morocco,477,Low Proficiency,13109000,6.8,,,
-Bahrain,476,Low Proficiency,11061000,10.3,,,
-Panama,475,Low Proficiency,2494000,7.2,,,
-Venezuela,475,Low Proficiency,,0.098,,,
-Algeria,474,Low Proficiency,2371000,0.12,,,
-Nicaragua,470,Low Proficiency,1455000,6.1,,,
-Madagascar,469,Low Proficiency,486000,6.5,,,
-Japan,468,Low Proficiency,31881000,0.7,,,
-Qatar,467,Low Proficiency,2136500,3.6,,,
-Indonesia,466,Low Proficiency,16107000,1.2,,,
-Colombia,465,Low Proficiency,4531000,1.6,,,
-Sri Lanka,464,Low Proficiency,2027000,4.5,,,
-Mongolia,461,Low Proficiency,637000,3.4,,,
-Kuwait,458,Low Proficiency,8565000,0.26,,,
-Egypt,455,Low Proficiency,13026000,3.3,,,
-Azerbaijan,451,Low Proficiency,3170000,7.4,,,
-Uzbekistan,447,Very Low Proficiency,6749000,0.25,,,
-Syria,445,Very Low Proficiency,2424000,15.3,,,
-Ecuador,440,Very Low Proficiency,2108000,1.6,,,
-Jordan,440,Very Low Proficiency,5361000,11.6,,,
-Mexico,436,Very Low Proficiency,97406000,1.9,,,
-Myanmar,429,Very Low Proficiency,4364000,3.3,,,
-Angola,428,Very Low Proficiency,218000,0.5,,,
-Cameroon,428,Very Low Proficiency,1021000,1.5,,,
-Kazakhstan,426,Very Low Proficiency,8515000,1.1,,,
-Cambodia,423,Very Low Proficiency,6611000,16.4,,,
-Sudan,421,Very Low Proficiency,,0.88,,,
-Ivory Coast,420,Very  Low Proficiency,2070000,0.94,,,
-Thailand,419,Very Low Proficiency,39916000,12.6,,,
-Kyrgyzstan,418,Very Low Proficiency,8508000,5.7,,,
-Oman,417,Very Low Proficiency,3506000,2.4,,,
-Tajikistan,405,Very Low Proficiency,,0.11,,,
-Saudi Arabia,404,Very Low Proficiency,20292000,1.8,,,
-Haiti,403,Very Low Proficiency,938000,6,,,
-Iraq,399,Very Low Proficiency,,1.2,,,
-Libya,390,Very Low Proficiency,,0.12,,,
-Rwanda,389,Very Low Proficiency,1634000,4.8,,,
-Yemen,360,Very Low Proficiency,,6.4,,,
+Country,Score,Band,Number of Tourists,Tourism Contribution to GDP (%)
+Netherlands,663,Very High Proficiency,20129000,1.9
+Austria,641,Very High Proficiency,31884000,4.9
+Denmark,636,Very High Proficiency,33093000,2.3
+Singapore,635,Very High Proficiency,19116000,6.1
+Norway,632,Very High Proficiency,5879000,1.4
+Belgium,629,Very High Proficiency,9343000,2.5
+Portugal,625,Very High Proficiency,17283000,7.9
+Sweden,623,Very High Proficiency,7616000,2.6
+Finland,618,Very High Proficiency,3290000,1.2
+Croatia,617,Very High Proficiency,60021000,19.9
+Germany,616,Very High Proficiency,39563000,1.1
+South Africa,606,Very High Proficiency,14797000,2.5
+Luxembourg,604,Very High Proficiency,1041000,7.2
+Serbia,599,High Proficiency,1847000,3.2
+Romania,598,High Proficiency,12815000,1.2
+Poland,597,High Proficiency,88515000,2.4
+Hungary,593,High Proficiency,61397000,4.4
+Philippines,592,High Proficiency,8261000,2.2
+Greece,591,High Proficiency,34005000,8.3
+Slovakia,590,High Proficiency,,3.1
+Kenya,587,High Proficiency,2049000,1.2
+Estonia,581,High Proficiency,6103000,6.3
+Bulgaria,580,High Proficiency,12552000,7.1
+Lithuania,579,High Proficiency,6150000,2.8
+Switzerland,575,High Proficiency,11818000,2.5
+Latvia,569,High Proficiency,8342000,2.9
+Czech Republic,563,High Proficiency,37202000,3.2
+Malaysia,562,High Proficiency,26101000,5.8
+Nigeria,560,High Proficiency,,0.68
+Argentina,556,High Proficiency,7399000,0.79
+France,551,High Proficiency,217877000,2.3
+Hong Kong,545,Moderate Proficiency,55913000,4.5
+Spain,540,Moderate Proficiency,126170000,5.2
+Lebanon,536,Moderate Proficiency,1936000,14.7
+Italy,535,Moderate Proficiency,95399000,2.3
+South Korea,529,Moderate Proficiency,17503000,0.88
+Belarus,528,Moderate Proficiency,11832000,1.5
+Albania,527,Moderate Proficiency,6406000,14.8
+Ukraine,525,Moderate Proficiency,13710000,1.1
+Bolivia,524,Moderate Proficiency,1239000,2.1
+Ghana,523,Moderate Proficiency,,1.8
+Cuba,521,Moderate Proficiency,4276000,3.3
+Costa Rica,520,Moderate Proficiency,3366000,6.8
+Paraguay,520,Moderate Proficiency,4368000,2
+Chile,516,Moderate Proficiency,5431000,1.3
+India,515,Moderate Proficiency,17914000,1.1
+China,513,Moderate Proficiency,162538000,0.27
+Georgia,512,Moderate Proficiency,7726000,18.1
+Russia,511,Moderate Proficiency,24419000,0.57
+Tunisia,510,Moderate Proficiency,9429000,3.2
+Uruguay,509,Moderate Proficiency,3480000,4.5
+El Salvador,508,Moderate Proficiency,2639000,3.5
+Honduras,506,Moderate Proficiency,2315000,3.1
+Peru,505,Moderate Proficiency,5275000,1.8
+Macau,504,Moderate Proficiency,39406000,3.7
+Iran,501,Moderate Proficiency,9107000,0.84
+Armenia,499,Low Proficiency,1894000,9.7
+Brazil,497,Low Proficiency,6353000,0.28
+Guatemala,493,Low Proficiency,2560000,2.1
+Nepal,492,Low Proficiency,1197000,2.6
+Ethiopia,491,Low Proficiency,812000,0.54
+Pakistan,491,Low Proficiency,,0.12
+Bangladesh,490,Low Proficiency,323000,0.13
+Vietnam,486,Low Proficiency,18009000,4
+Tanzania,485,Low Proficiency,1527000,4.5
+Mozambique,482,Low Proficiency,2033000,1.2
+United Arab Emirates,480,Low Proficiency,25282000,5.5
+Turkey,478,Low Proficiency,51747000,2.6
+Morocco,477,Low Proficiency,13109000,6.8
+Bahrain,476,Low Proficiency,11061000,10.3
+Panama,475,Low Proficiency,2494000,7.2
+Venezuela,475,Low Proficiency,,0.098
+Algeria,474,Low Proficiency,2371000,0.12
+Nicaragua,470,Low Proficiency,1455000,6.1
+Madagascar,469,Low Proficiency,486000,6.5
+Japan,468,Low Proficiency,31881000,0.7
+Qatar,467,Low Proficiency,2136500,3.6
+Indonesia,466,Low Proficiency,16107000,1.2
+Colombia,465,Low Proficiency,4531000,1.6
+Sri Lanka,464,Low Proficiency,2027000,4.5
+Mongolia,461,Low Proficiency,637000,3.4
+Kuwait,458,Low Proficiency,8565000,0.26
+Egypt,455,Low Proficiency,13026000,3.3
+Azerbaijan,451,Low Proficiency,3170000,7.4
+Uzbekistan,447,Very Low Proficiency,6749000,0.25
+Syria,445,Very Low Proficiency,2424000,15.3
+Ecuador,440,Very Low Proficiency,2108000,1.6
+Jordan,440,Very Low Proficiency,5361000,11.6
+Mexico,436,Very Low Proficiency,97406000,1.9
+Myanmar,429,Very Low Proficiency,4364000,3.3
+Angola,428,Very Low Proficiency,218000,0.5
+Cameroon,428,Very Low Proficiency,1021000,1.5
+Kazakhstan,426,Very Low Proficiency,8515000,1.1
+Cambodia,423,Very Low Proficiency,6611000,16.4
+Sudan,421,Very Low Proficiency,,0.88
+Ivory Coast,420,Very  Low Proficiency,2070000,0.94
+Thailand,419,Very Low Proficiency,39916000,12.6
+Kyrgyzstan,418,Very Low Proficiency,8508000,5.7
+Oman,417,Very Low Proficiency,3506000,2.4
+Tajikistan,405,Very Low Proficiency,,0.11
+Saudi Arabia,404,Very Low Proficiency,20292000,1.8
+Haiti,403,Very Low Proficiency,938000,6
+Iraq,399,Very Low Proficiency,,1.2
+Libya,390,Very Low Proficiency,,0.12
+Rwanda,389,Very Low Proficiency,1634000,4.8
+Yemen,360,Very Low Proficiency,,6.4
