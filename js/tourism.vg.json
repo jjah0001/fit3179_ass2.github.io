@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "English Proficiency with regards to the Number of Tourists",
+     "width":490,
+     "height": 550,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData5.csv"
+    },
+    "mark": "point",
+    "encoding": {
+      "x": {
+        "field": "Score",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "y": {
+        "field": "Number of Tourists",
+        "type": "quantitative",
+        "scale": {"domain": [200000, 220000000]}
+      },
+      "color": {"field": "Band", "type": "nominal"},
+      "size": {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"}
+    }
+  }

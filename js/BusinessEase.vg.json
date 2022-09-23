@@ -1,15 +1,22 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A bar chart showing the US population distribution of age groups in 2000.",
-    "height": {"step": 17},
-    "data": { "url": "data/population.json"},
-    "transform": [{"filter": "datum.year == 2000"}],
+    "width":490,
+    "title": "English Proficiency Index of Each Country ordered in terms of the Ease of Business Index",
+    "height": {"step": 6},
+    "align": "all",
+    "data": { "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData3.csv"},
     "mark": "bar",
     "encoding": {
-      "y": {"field": "age"},
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "sort": {"field":"Rank", "op": "sum"}
+      },
       "x": {
-        "aggregate": "sum", "field": "people",
-        "title": "population"
+        "aggregate": "sum",
+        "field": "Score",
+        "title": "English Proficiency Index",
+        "scale": {"domain": [350, 670]}
       }
     }
   }

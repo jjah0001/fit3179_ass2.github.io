@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 488,
-  "title": "English Proficiency of Participating Countries (English First, 2022)",
+  "title": "English Proficiency of Participating Countries (English First, 2021)",
   "projection": {"type": "equalEarth"},
   "layer": [
     {
