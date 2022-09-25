@@ -1,0 +1,12 @@
+{
+    "data": {"url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/SingaporeLanguage.csv"},
+    "width": 500,
+    "height": 300,
+    "mark": "line",
+    "title": "Languages Spoken at Home in Singapore",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Proportion of Home Speakers (%)", "type": "quantitative"},
+      "color": {"field": "Language", "type": "nominal"}
+    }
+  }
