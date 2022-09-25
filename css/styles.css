@@ -9,6 +9,13 @@
 	width: 50%;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 #historyGeography {
 	left: 100px;
 	/*height: 1000px;
@@ -42,6 +49,8 @@ h3 {
 p {
 	font-size: 16px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	word-spacing: 1px;
+	line-height: 25px;
 }
 
 body {
