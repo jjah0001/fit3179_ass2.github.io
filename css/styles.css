@@ -43,3 +43,7 @@ p {
 	font-size: 16px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+	background-color: rgb(246, 239, 221);
+}
