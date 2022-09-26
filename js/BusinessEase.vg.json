@@ -17,6 +17,12 @@
         "field": "Score",
         "title": "English Proficiency Index",
         "scale": {"domain": [350, 670]}
-      }
+      },
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "Rank", "type":"ordinal"},
+        {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
+        {"field": "Band", "type":"ordinal"}
+      ]
     }
   }

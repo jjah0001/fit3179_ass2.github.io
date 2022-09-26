@@ -6,6 +6,14 @@
     "data": {
       "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData5.csv"
     },
+    "params": [
+      {
+        "name": "Max_Tourists",
+  
+        "value": 200000,
+        "bind": {"input": "range", "min": 0, "max": 220000000, "step": 1000}
+      }
+    ],
     "mark": "point",
     "encoding": {
       "x": {
@@ -16,8 +24,16 @@
       "y": {
         "field": "Number of Tourists",
         "type": "quantitative",
-        "scale": {"domain": [200000, 220000000]}
+        "scale": {"domain": [200000, 220000000]},
+        "title": "Number of Tourists that visited in 2019"
       },
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "Number of Tourists", "type":"quantitative", "title": "Number of Tourists in 2019"},
+        {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"},
+        {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
+        {"field": "Band", "type":"ordinal"}
+      ],
       "color": {"field": "Band", "type": "nominal"},
       "size": {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"}
     }
