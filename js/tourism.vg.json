@@ -16,7 +16,7 @@
     ],
     "transform": [
       {"filter": "datum.tourist_no > 0"},
-      {"filter": "datum.tourism_gdp < Min_GDP"}
+      {"filter": "datum.tourism_gdp > Min_GDP"}
     ],
     "encoding": {
       "x": {
