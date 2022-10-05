@@ -1,4 +1,4 @@
-Country,Score,Band,Number of Tourists,Tourism Contribution to GDP (%)
+Country,Score,Band,tourist_no,Tourism Contribution to GDP (%)
 Netherlands,663,Very High Proficiency,20129000,1.9
 Austria,641,Very High Proficiency,31884000,4.9
 Denmark,636,Very High Proficiency,33093000,2.3

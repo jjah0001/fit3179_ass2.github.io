@@ -2,16 +2,36 @@
     "data": {"url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/SingaporeLanguage.csv"},
     "width": 500,
     "height": 300,
-    "mark": "line",
     "title": "Languages Spoken at Home in Singapore",
     "encoding": {
       "x": {"field": "Year", "type": "temporal"},
-      "y": {"field": "Proportion of Home Speakers (%)", "type": "quantitative"},
-      "color": {"field": "Language", "type": "nominal"},
-      "tooltip": [
-        {"field": "Language", "type":"nominal"},
-        {"field": "Year", "type": "temporal"},
-        {"field": "Proportion of Home Speakers (%)", "type":"quantitative"}
-      ]
-    }
+      "y": {"field": "Proportion of Home Speakers (%)", "type": "quantitative"}
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "color": {"field": "Language", "type": "nominal"},
+          "tooltip": [
+            {"field": "Language", "type":"nominal"},
+            {"field": "Year", "type": "temporal"},
+            {"field": "Proportion of Home Speakers (%)", "type":"quantitative"}
+          ]
+        },
+        "opacity": 0.3
+      },
+      {
+        "mark": "circle",
+        "encoding": {
+          "color": {"field": "Language", "type": "nominal"},
+          "tooltip": [
+            {"field": "Language", "type":"nominal"},
+            {"field": "Year", "type": "temporal"},
+            {"field": "Proportion of Home Speakers (%)", "type":"quantitative"}
+          ]
+        },
+        "opacity": 1.0
+      }
+      
+    ]
   }

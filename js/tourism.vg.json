@@ -24,28 +24,13 @@
         "scale": {"zero": false}
       },
       "y": {
-        "field": "Number of Tourists",
+        "field": "tourists_no",
         "type": "quantitative",
-        "scale": {"type":"log","domain": [200000, 220000000]},
+        "scale": {"type":"log","domain": [200000, 280000000]},
         "title": "Number of Tourists that visited in 2019"
       }
     },
     "layer": [
-      {
-        "mark": "point",
-        "encoding": {
-          "color": {"field": "Band", "type": "nominal"},
-          "size": {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"},
-          "opacity": {"value": 0.6},
-          "tooltip": [
-            {"field": "Country", "type": "nominal"},
-            {"field": "Number of Tourists", "type":"quantitative", "title": "Number of Tourists in 2019"},
-            {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"},
-            {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
-            {"field": "Band", "type":"ordinal"}
-          ]
-        }
-      },
       {
         "mark": {
           "type": "text",
@@ -60,14 +45,23 @@
           "color": {"value": "black"},
           "opacity": {
             "condition": {
-              "test": "datum['Country'] == 'Germany' || datum['Country'] == 'Singapore' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand'"
+              "test": "datum['Country'] == 'Mexico' || datum['Country'] == 'Luxembourg' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand' || datum['Country'] == 'United Arab Emirates' ||datum['Country'] == 'France' "
             },
             "value": 0
-          },
+          }
+
+        }
+      },
+      {
+        "mark": "point",
+        "encoding": {
+          "color": {"field": "Band", "type": "nominal"},
+          "size": {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"},
+          "opacity": {"value": 0.6},
           "tooltip": [
             {"field": "Country", "type": "nominal"},
             {"field": "Number of Tourists", "type":"quantitative", "title": "Number of Tourists in 2019"},
-            {"field": "Tourism Contribution to GDP (%)", "type": "quantitative"},
+            {"field": "tourism_gdp", "type": "quantitative", "title": "Tourism Contribution to GDP (%)"},
             {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
             {"field": "Band", "type":"ordinal"}
           ]
