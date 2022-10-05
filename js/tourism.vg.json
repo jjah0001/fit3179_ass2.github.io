@@ -60,7 +60,7 @@
           "opacity": {"value": 0.6},
           "tooltip": [
             {"field": "Country", "type": "nominal"},
-            {"field": "Number of Tourists", "type":"quantitative", "title": "Number of Tourists in 2019"},
+            {"field": "tourist_no", "type":"quantitative", "title": "Number of Tourists in 2019"},
             {"field": "tourism_gdp", "type": "quantitative", "title": "Tourism Contribution to GDP (%)"},
             {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
             {"field": "Band", "type":"ordinal"}
