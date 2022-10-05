@@ -17,8 +17,7 @@
             {"field": "Year", "type": "temporal"},
             {"field": "Proportion of Home Speakers (%)", "type":"quantitative"}
           ]
-        },
-        "opacity": 0.3
+        }
       },
       {
         "mark": "circle",
@@ -29,8 +28,7 @@
             {"field": "Year", "type": "temporal"},
             {"field": "Proportion of Home Speakers (%)", "type":"quantitative"}
           ]
-        },
-        "opacity": 1.0
+        }
       }
       
     ]

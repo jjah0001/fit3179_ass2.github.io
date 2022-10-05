@@ -18,7 +18,7 @@ Poland,597,High Proficiency,88515000,2.4
 Hungary,593,High Proficiency,61397000,4.4
 Philippines,592,High Proficiency,8261000,2.2
 Greece,591,High Proficiency,34005000,8.3
-Slovakia,590,High Proficiency,,3.1
+Slovakia,590,High Proficiency,0,3.1
 Kenya,587,High Proficiency,2049000,1.2
 Estonia,581,High Proficiency,6103000,6.3
 Bulgaria,580,High Proficiency,12552000,7.1
@@ -27,7 +27,7 @@ Switzerland,575,High Proficiency,11818000,2.5
 Latvia,569,High Proficiency,8342000,2.9
 Czech Republic,563,High Proficiency,37202000,3.2
 Malaysia,562,High Proficiency,26101000,5.8
-Nigeria,560,High Proficiency,,0.68
+Nigeria,560,High Proficiency,0,0.68
 Argentina,556,High Proficiency,7399000,0.79
 France,551,High Proficiency,217877000,2.3
 Hong Kong,545,Moderate Proficiency,55913000,4.5
@@ -39,7 +39,7 @@ Belarus,528,Moderate Proficiency,11832000,1.5
 Albania,527,Moderate Proficiency,6406000,14.8
 Ukraine,525,Moderate Proficiency,13710000,1.1
 Bolivia,524,Moderate Proficiency,1239000,2.1
-Ghana,523,Moderate Proficiency,,1.8
+Ghana,523,Moderate Proficiency,0,1.8
 Cuba,521,Moderate Proficiency,4276000,3.3
 Costa Rica,520,Moderate Proficiency,3366000,6.8
 Paraguay,520,Moderate Proficiency,4368000,2
@@ -60,7 +60,7 @@ Brazil,497,Low Proficiency,6353000,0.28
 Guatemala,493,Low Proficiency,2560000,2.1
 Nepal,492,Low Proficiency,1197000,2.6
 Ethiopia,491,Low Proficiency,812000,0.54
-Pakistan,491,Low Proficiency,,0.12
+Pakistan,491,Low Proficiency,0,0.12
 Bangladesh,490,Low Proficiency,323000,0.13
 Vietnam,486,Low Proficiency,18009000,4
 Tanzania,485,Low Proficiency,1527000,4.5
@@ -70,7 +70,7 @@ Turkey,478,Low Proficiency,51747000,2.6
 Morocco,477,Low Proficiency,13109000,6.8
 Bahrain,476,Low Proficiency,11061000,10.3
 Panama,475,Low Proficiency,2494000,7.2
-Venezuela,475,Low Proficiency,,0.098
+Venezuela,475,Low Proficiency,0,0.098
 Algeria,474,Low Proficiency,2371000,0.12
 Nicaragua,470,Low Proficiency,1455000,6.1
 Madagascar,469,Low Proficiency,486000,6.5
@@ -93,15 +93,15 @@ Angola,428,Very Low Proficiency,218000,0.5
 Cameroon,428,Very Low Proficiency,1021000,1.5
 Kazakhstan,426,Very Low Proficiency,8515000,1.1
 Cambodia,423,Very Low Proficiency,6611000,16.4
-Sudan,421,Very Low Proficiency,,0.88
+Sudan,421,Very Low Proficiency,0,0.88
 Ivory Coast,420,Very Low Proficiency,2070000,0.94
 Thailand,419,Very Low Proficiency,39916000,12.6
 Kyrgyzstan,418,Very Low Proficiency,8508000,5.7
 Oman,417,Very Low Proficiency,3506000,2.4
-Tajikistan,405,Very Low Proficiency,,0.11
+Tajikistan,405,Very Low Proficiency,0,0.11
 Saudi Arabia,404,Very Low Proficiency,20292000,1.8
 Haiti,403,Very Low Proficiency,938000,6
-Iraq,399,Very Low Proficiency,,1.2
-Libya,390,Very Low Proficiency,,0.12
+Iraq,399,Very Low Proficiency,0,1.2
+Libya,390,Very Low Proficiency,0,0.12
 Rwanda,389,Very Low Proficiency,1634000,4.8
-Yemen,360,Very Low Proficiency,,6.4
+Yemen,360,Very Low Proficiency,0,6.4

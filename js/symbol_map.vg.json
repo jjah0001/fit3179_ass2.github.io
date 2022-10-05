@@ -23,7 +23,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
       },
-      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "mark": {"type": "circle"},
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
         "latitude": {"field": "Lat", "type": "quantitative"},
@@ -38,7 +38,13 @@
           "type": "nominal",
           "title": "Was it a former UK/US colony?",
           "scale": {"domain": ["Yes", "No"], "range": ["#074cfa","#ED03FC"]}
-        }
+        },
+        "tooltip": [
+          {"field": "Country", "type":"nominal"},
+          {"field": "Score", "type": "quantitative"},
+          {"field": "Band", "type":"ordinal"},
+          {"field": "Colony", "type":"nominal", "title":"Former 🇬🇧/🇺🇸 Colony"}
+          ]
       }
     }
   ]

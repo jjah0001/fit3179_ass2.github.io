@@ -8,23 +8,24 @@
     },
     "params": [
       {
-        "name": "Max_Tourists",
+        "name": "Max_GDP",
   
-        "value": 200000,
-        "bind": {"input": "range", "min": 0, "max": 220000000, "step": 1000}
+        "value": 15,
+        "bind": {"input": "range", "min": 0, "max": 20, "step": 0.5}
       }
     ],
     "transform": [
-
+      {"filter": "datum.tourist_no > 0"},
+      {"filter": "datum.tourism_gdp < Max_GDP"}
     ],
     "encoding": {
       "x": {
         "field": "Score",
         "type": "quantitative",
-        "scale": {"zero": false}
+        "scale": {"domain": [350, 680]}
       },
       "y": {
-        "field": "tourists_no",
+        "field": "tourist_no",
         "type": "quantitative",
         "scale": {"type":"log","domain": [200000, 280000000]},
         "title": "Number of Tourists that visited in 2019"
@@ -45,7 +46,7 @@
           "color": {"value": "black"},
           "opacity": {
             "condition": {
-              "test": "datum['Country'] == 'Mexico' || datum['Country'] == 'Luxembourg' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand' || datum['Country'] == 'United Arab Emirates' ||datum['Country'] == 'France' "
+              "test": "datum['Country'] == 'Mexico' || datum['Country'] == 'Luxembourg' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand' || datum['Country'] == 'United Arab Emirates' ||datum['Country'] == 'France' || datum['Country'] == 'Croatia'"
             },
             "value": 0
           }
