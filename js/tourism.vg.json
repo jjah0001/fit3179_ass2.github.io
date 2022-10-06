@@ -9,7 +9,7 @@
     "params": [
       {
         "name": "Min_GDP",
-        "value": 15,
+        "value": 0,
         "bind": {"input": "range", "min": 0, "max": 20, "step": 0.5}
       }
     ],
@@ -22,13 +22,15 @@
       "x": {
         "field": "Score",
         "type": "quantitative",
-        "scale": {"domain": [350, 680]}
+        "scale": {"domain": [350, 680]},
+        "axis": {"tickCount": 6}
       },
       "y": {
         "field": "Number of Tourists that visited in 2019 (000s)",
         "type": "quantitative",
         "scale": {"type":"log","domain": [200, 280000]},
-        "title": "Number of Tourists that visited in 2019 (000s)"
+        "title": "Number of Tourists that visited in 2019 ('000)",
+        "axis": {"tickCount": 7}
       }
     },
     "layer": [
@@ -63,8 +65,8 @@
         }],
         "mark": "point",
         "encoding": {
-          "color": {"field": "Band", "type": "nominal"},
           "size": {"field":  "tourism_gdp", "type": "quantitative", "title": "Tourism Contribution to GDP (%)"},
+          "color": {"value": "green"},
           "opacity": {
             "condition": {"param": "hover", "value": 1},
             "value": 0.1

@@ -2,8 +2,45 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 488,
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 190,
+      "bind": {
+      "input": "range",
+      "min": 185,
+      "max": 785,
+      "step": 10,
+      "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [0, 0],
+      "bind": {
+      "input": "select",
+      "options": [
+      [-61.3269, -4.4420],
+      [15.2551, 54.5260],
+      [34.5085, -8.7832],
+      [42.5510,29.2985],
+      [68.8319, 45.4507],
+      [76.4563,25.0376],
+      [106.5348, 38.7946],
+      [115.6628, -2.2180],
+      [0, 0]
+      ],
+      "labels": ["Latin America", "Europe", "Africa", "Middle East", "Central Asia", "South Asia", "East Asia", "Southeast Asia", "World"],
+      "name": "Map Centre: "
+      }
+    }
+  ],
   "title": "English Proficiency of Participating Countries (English First, 2021)",
-  "projection": {"type": "equalEarth"},
+  "projection": {
+    "type": "equalEarth",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
   "layer": [
     {
       "data": {
@@ -23,6 +60,14 @@
       "data": {
         "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
       },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "on": "mouseover"
+        }
+      }
+    ],
       "mark": {"type": "circle"},
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
@@ -37,7 +82,12 @@
           "field": "Colony",
           "type": "nominal",
           "title": "Was it a former UK/US colony?",
-          "scale": {"domain": ["Yes", "No"], "range": ["#074cfa","#ED03FC"]}
+          "scale": {"domain": ["Yes", "No"], "range": ["#074cfa","#ED03FC"]},
+          "legend": null
+        },
+        "opacity": {
+          "condition": {"param": "hover", "value": 0.8},
+          "value": 0.2
         },
         "tooltip": [
           {"field": "Country", "type":"nominal"},
