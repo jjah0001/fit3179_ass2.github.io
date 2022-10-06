@@ -5,12 +5,20 @@
     "height": {"step": 6},
     "align": "all",
     "data": { "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData3.csv"},
+    "params": [{
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }],
     "mark": "bar",
     "encoding": {
       "y": {
         "field": "Country",
         "type": "nominal",
-        "sort": {"field":"Rank", "op": "sum"}
+        "sort": {"field":"Rank", "op": "sum"},
+        "title": "Country arranged by Ease of Business Ranking"
       },
       "x": {
         "aggregate": "sum",
@@ -23,6 +31,10 @@
         {"field": "Rank", "type":"ordinal"},
         {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
         {"field": "Band", "type":"ordinal"}
-      ]
+      ],
+      "opacity": {
+        "condition": {"param": "hover", "value": 1},
+        "value": 0.4
+      }
     }
   }
