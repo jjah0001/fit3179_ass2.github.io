@@ -7,31 +7,55 @@
       "name": "zoom_level",
       "value": 190,
       "bind": {
-      "input": "range",
-      "min": 185,
-      "max": 785,
-      "step": 10,
-      "name": "Zoom: "
+        "input": "range",
+        "min": 185,
+        "max": 785,
+        "step": 10,
+        "name": "Zoom: "
       }
     },
     {
       "name": "center_to",
       "value": [0, 0],
       "bind": {
-      "input": "select",
-      "options": [
-      [-61.3269, -4.4420],
-      [15.2551, 54.5260],
-      [34.5085, -8.7832],
-      [42.5510,29.2985],
-      [68.8319, 45.4507],
-      [76.4563,25.0376],
-      [106.5348, 38.7946],
-      [115.6628, -2.2180],
-      [0, 0]
-      ],
-      "labels": ["Latin America", "Europe", "Africa", "Middle East", "Central Asia", "South Asia", "East Asia", "Southeast Asia", "World"],
-      "name": "Map Centre: "
+        "input": "select",
+        "options": [
+          [-61.3269, -4.442],
+          [15.2551, 54.526],
+          [34.5085, -8.7832],
+          [42.551, 29.2985],
+          [68.8319, 45.4507],
+          [76.4563, 25.0376],
+          [106.5348, 38.7946],
+          [115.6628, -2.218],
+          [0, 0]
+        ],
+        "labels": [
+          "Latin America",
+          "Europe",
+          "Africa",
+          "Middle East",
+          "Central Asia",
+          "South Asia",
+          "East Asia",
+          "Southeast Asia",
+          "World"
+        ],
+        "name": "Map Centre: "
+      }
+    },
+    {
+      "name": "colonialism",
+      "value": "Both",
+      "bind": {
+        "input": "select",
+        "options": ["Yes", "No", "Both"],
+        "labels": [
+          "Former British/American colonies",
+          "Never British/American colonies",
+          "Both"
+        ],
+        "name": "Colonial History: "
       }
     }
   ],
@@ -60,14 +84,9 @@
       "data": {
         "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
       },
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "on": "mouseover"
-        }
-      }
-    ],
+      "params": [
+        {"name": "hover", "select": {"type": "point", "on": "mouseover"}}
+      ],
       "mark": {"type": "circle"},
       "encoding": {
         "longitude": {"field": "Long", "type": "quantitative"},
@@ -76,13 +95,17 @@
           "field": "Score",
           "type": "quantitative",
           "title": "English Proficiency Index",
-          "scale": {"domain": [450, 500, 550, 600], "type": "threshold", "range": [20,40,80,115,175]}
+          "scale": {
+            "domain": [450, 500, 550, 600],
+            "type": "threshold",
+            "range": [20, 40, 80, 115, 175]
+          }
         },
         "color": {
           "field": "Colony",
           "type": "nominal",
           "title": "Was it a former UK/US colony?",
-          "scale": {"domain": ["Yes", "No"], "range": ["#074cfa","#ED03FC"]},
+          "scale": {"domain": ["Yes", "No"], "range": ["#074cfa", "#ED03FC"]},
           "legend": null
         },
         "opacity": {
@@ -90,12 +113,86 @@
           "value": 0.2
         },
         "tooltip": [
-          {"field": "Country", "type":"nominal"},
+          {"field": "Country", "type": "nominal"},
           {"field": "Score", "type": "quantitative"},
-          {"field": "Band", "type":"ordinal"},
-          {"field": "Colony", "type":"nominal", "title":"Former 🇬🇧/🇺🇸 Colony"}
-          ]
+          {"field": "Band", "type": "ordinal"},
+          {
+            "field": "Colony",
+            "type": "nominal",
+            "title": "Former 🇬🇧/🇺🇸 Colony"
+          }
+        ]
       }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
+      },
+      "transform": [
+        {
+        "window": [{"op": "rank", "as": "ranking"}],
+        "sort": [{"field": "Score", "order":
+        "descending"}]
+        },
+        {"filter": "datum.ranking == 1"},
+        {
+          "calculate": "datum['Country'] + ' has the highest English Proficiency.' ",
+          "as": "text_annotation_raw"
+        },
+        {
+          "calculate": "split(datum.text_annotation_raw,';')",
+          "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -8,
+        "baseline": "middle",
+        "fontStyle": "bold"
+        },
+        "encoding": {"text": {
+          "field": "text_annotation"
+          },
+        "longitude": {"field": "Long", "type": "quantitative"},
+        "latitude": {"field": "Lat", "type": "quantitative"},
+        "color":{"value":"Green"}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
+      },
+      "transform": [
+        {
+        "window": [{"op": "rank", "as": "ranking"}],
+        "sort": [{"field": "Score", "order":
+        "ascending"}]
+        },
+        {"filter": "datum.ranking == 1"},
+        {
+          "calculate": "datum['Country'] + ' has the lowest English Proficiency.' ",
+          "as": "text_annotation_raw"
+        },
+        {
+          "calculate": "split(datum.text_annotation_raw,';')",
+          "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -8,
+        "baseline": "middle",
+        "fontStyle": "bold"
+        },
+        "encoding": {"text": {
+          "field": "text_annotation"
+          },
+        "longitude": {"field": "Long", "type": "quantitative"},
+        "latitude": {"field": "Lat", "type": "quantitative"},
+        "color":{"value":"red"}}
     }
   ]
 }
