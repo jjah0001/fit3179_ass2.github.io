@@ -46,13 +46,13 @@
     },
     {
       "name": "colonialism",
-      "value": "Both",
+      "value": null,
       "bind": {
         "input": "select",
-        "options": ["Yes", "No", "Both"],
+        "options": ["Yes", "No", null],
         "labels": [
-          "Former British/American colonies",
-          "Never British/American colonies",
+          "Former 🇬🇧/🇺🇸 colonies",
+          "Never 🇬🇧/🇺🇸 colonies",
           "Both"
         ],
         "name": "Colonial History: "
@@ -86,6 +86,9 @@
       },
       "params": [
         {"name": "hover", "select": {"type": "point", "on": "mouseover"}}
+      ],
+      "transform": [
+        {"filter": "colonialism == null || datum.Colony == colonialism"}
       ],
       "mark": {"type": "circle"},
       "encoding": {
@@ -129,6 +132,7 @@
         "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
       },
       "transform": [
+        {"filter": "colonialism == null || datum.Colony == colonialism"},
         {
         "window": [{"op": "rank", "as": "ranking"}],
         "sort": [{"field": "Score", "order":
@@ -136,7 +140,7 @@
         },
         {"filter": "datum.ranking == 1"},
         {
-          "calculate": "datum['Country'] + ' has the highest English Proficiency.' ",
+          "calculate": "datum['Country'] + ' has the highest; English Proficiency.' ",
           "as": "text_annotation_raw"
         },
         {
@@ -164,6 +168,7 @@
         "url": "https://raw.githubusercontent.com/jjah0001/FIT3179/main/Assignment2/data/Proficiency_with_long_lat.csv"
       },
       "transform": [
+        {"filter": "colonialism == null || datum.Colony == colonialism"},
         {
         "window": [{"op": "rank", "as": "ranking"}],
         "sort": [{"field": "Score", "order":
@@ -171,7 +176,7 @@
         },
         {"filter": "datum.ranking == 1"},
         {
-          "calculate": "datum['Country'] + ' has the lowest English Proficiency.' ",
+          "calculate": "datum['Country'] + ' has the lowest; English Proficiency.' ",
           "as": "text_annotation_raw"
         },
         {
