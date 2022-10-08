@@ -48,7 +48,7 @@
           "color": {"value": "black"},
           "opacity": {
             "condition": {
-              "test": "datum['Country'] == 'Mexico' || datum['Country'] == 'Luxembourg' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand' || datum['Country'] == 'United Arab Emirates' ||datum['Country'] == 'France' || datum['Country'] == 'Croatia'"
+              "test": "datum['Country'] == 'Mexico' || datum['Country'] == 'Luxembourg' || datum['Country'] == 'Malaysia' ||  datum['Country'] == 'Thailand' || datum['Country'] == 'United Arab Emirates' ||datum['Country'] == 'France' || datum['Country'] == 'Croatia' || datum['Country'] == 'Japan'"
             },
             "value": 0
           }
