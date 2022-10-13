@@ -16,21 +16,38 @@
 	width: 50%;
 }
 
+.page {
+    width: 1300px;
+    background-color: rgb(246, 239, 221);
+    margin: auto;
+    padding: 15px;
+	border: 10pt;
+	border-color: black;
+  }
+
 #historyGeography {
-	left: 100px;
+	left: 80px;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
 #BusinessEase {
-	float: left;
+	float: center;
+	left: 10px;
+
+}
+
+#tourism {
+	float: center;
+	left: 5px;
+	right: 10px;
 
 }
 
 h1 {
 	font-size:xx-large;
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Old English Text', Times, serif;
 }
 
 h2 {
@@ -51,8 +68,10 @@ p {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	word-spacing: 1px;
 	line-height: 25px;
+	padding-left: 0.3cm;
+	padding-right: 0.3cm;
 }
 
 body {
-	background-color: rgb(246, 239, 221);
+	background-color: rgb(193, 193, 193);
 }

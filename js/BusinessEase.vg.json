@@ -1,9 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width":490,
-    "title": "English Proficiency Index of Each Country ordered in terms of the Ease of Business Index",
-    "height": {"step": 6},
-    "align": "all",
     "data": { "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData3.csv"},
     "params": [{
       "name": "hover",
@@ -12,8 +8,49 @@
         "on": "mouseover"
       }
     }],
-    "mark": "bar",
-    "encoding": {
+    "vconcat": [
+      {
+        "title": "English Proficiency of Select Country ordered on the Ease of Business Index",
+        "height": {"step": 10},
+        "width":450,
+        "transform": [
+          {"filter": "datum.Rank < 17"}
+        ],
+        "mark": "bar",
+        "encoding": {
+        "y": {
+          "field": "Country",
+          "type": "nominal",
+          "sort": {"field":"Rank", "op": "sum"},
+          "title": "Country arranged by Ease of Business Ranking"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "Score",
+          "title": "English Proficiency Index",
+          "scale": {"domain": [350, 670]}
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Rank", "type":"ordinal"},
+          {"field": "Score", "type": "quantitative", "title": "English Proficiency Index", "format": ","},
+          {"field": "Band", "type":"ordinal"}
+        ],
+        "opacity": {
+          "condition": {"param": "hover", "value": 1},
+          "value": 0.4
+        }
+      }
+    },
+    {
+      "title": "English Proficiency of Select Country ordered on the Ease of Business Index",
+      "height": {"step": 10},
+      "width":450,
+      "transform": [
+        {"filter": "datum.Rank > 172"}
+      ],
+      "mark": "bar",
+      "encoding": {
       "y": {
         "field": "Country",
         "type": "nominal",
@@ -38,3 +75,6 @@
       }
     }
   }
+  ]
+    
+}

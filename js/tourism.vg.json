@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "English Proficiency with regards to the Number of Tourists",
-     "width":420,
+     "width":400,
      "height": 550,
     "data": {
       "url": "https://raw.githubusercontent.com/jjah0001/fit3179_ass2.github.io/master/data/JoinedData5.csv"
