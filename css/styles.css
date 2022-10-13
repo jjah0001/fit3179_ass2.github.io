@@ -1,3 +1,5 @@
+
+
 .row:after {
 	content: "";
   	display: table;
@@ -21,7 +23,8 @@
     background-color: rgb(246, 239, 221);
     margin: auto;
     padding: 15px;
-	border: 10pt;
+	border-style: solid;
+	border-width: 2px;
 	border-color: black;
   }
 
@@ -45,27 +48,40 @@
 }
 
 h1 {
-	font-size:xx-large;
+	font-size: 70px;
 	text-align: center;
-	font-family: 'Old English Text', Times, serif;
+	font-family: 'IM Fell French Canon SC', serif;
 }
 
 h2 {
-	font-size:x-large;
+	font-size: 32px;
 	text-align: left;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Tapestry', Times, serif;
+	padding-left: 0.3cm;
 }
 
 h3 {
-	font-size:18px;
+	font-size:22px;
 	text-align: left;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	font-style: normal;
+	padding-left: 0.3cm;
+}
+
+h4 {
+	font-size:19px;
+	text-align: center;
+}
+
+.caption {
+	font-size: 10px;
+	font-family: 'Open Sans', san-serif;
+	text-align: center;
 }
 
 p {
 	font-size: 16px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Cabin', san-serif;
 	word-spacing: 1px;
 	line-height: 25px;
 	padding-left: 0.3cm;

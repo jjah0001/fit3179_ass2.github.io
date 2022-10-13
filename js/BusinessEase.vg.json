@@ -10,9 +10,9 @@
     }],
     "vconcat": [
       {
-        "title": "English Proficiency of Select Country ordered on the Ease of Business Index",
-        "height": {"step": 10},
-        "width":450,
+        "title": "Top 10 Countries of the Ease of Business Index",
+        "height": {"step": 20},
+        "width":420,
         "transform": [
           {"filter": "datum.Rank < 17"}
         ],
@@ -22,13 +22,14 @@
           "field": "Country",
           "type": "nominal",
           "sort": {"field":"Rank", "op": "sum"},
-          "title": "Country arranged by Ease of Business Ranking"
+          "title": "Selected Countries"
         },
         "x": {
           "aggregate": "sum",
           "field": "Score",
           "title": "English Proficiency Index",
-          "scale": {"domain": [350, 670]}
+          "scale": {"domain": [350, 650]},
+          "axis": {"tickCount": 6}
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
@@ -43,9 +44,9 @@
       }
     },
     {
-      "title": "English Proficiency of Select Country ordered on the Ease of Business Index",
-      "height": {"step": 10},
-      "width":450,
+      "title": "Bottom 10 Countries of the Ease of Business Index",
+      "height": {"step": 20},
+      "width":420,
       "transform": [
         {"filter": "datum.Rank > 172"}
       ],
@@ -55,13 +56,14 @@
         "field": "Country",
         "type": "nominal",
         "sort": {"field":"Rank", "op": "sum"},
-        "title": "Country arranged by Ease of Business Ranking"
+        "title": "Selected Countries"
       },
       "x": {
         "aggregate": "sum",
         "field": "Score",
         "title": "English Proficiency Index",
-        "scale": {"domain": [350, 670]}
+        "scale": {"domain": [350, 650]},
+        "axis": {"tickCount": 6}
       },
       "tooltip": [
         {"field": "Country", "type": "nominal"},

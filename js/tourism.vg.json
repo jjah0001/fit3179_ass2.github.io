@@ -65,7 +65,7 @@
         }],
         "mark": "point",
         "encoding": {
-          "size": {"field":  "tourism_gdp", "type": "quantitative", "title": "Tourism Contribution to GDP (%)"},
+          "size": {"field":  "tourism_gdp", "type": "quantitative", "title": "%GDP of Tourism"},
           "color": {"value": "green"},
           "opacity": {
             "condition": {"param": "hover", "value": 1},
